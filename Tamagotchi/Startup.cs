@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Tamagotchi
+namespace Tamagotchis
 {
     public class Startup
     {
@@ -34,7 +34,7 @@ namespace Tamagotchi
             {
                 await context.Response.WriteAsync("Hello World!");
             });
-            
+
         }
     }
 }
