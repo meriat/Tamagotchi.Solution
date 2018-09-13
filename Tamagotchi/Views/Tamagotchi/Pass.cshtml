@@ -8,10 +8,19 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1> Feed Tama</h1>
+        <h1> Your Tamagotchis</h1>
       </div>
-      <p>Current food level: @Model.food</p>
-      <p><a href="/tamas">Back to list</a></p>
+      <ul>
+        @foreach(var tama in Model)
+        {
+          <br>
+          <li><a href='/tamas/@tama.id'>@tama.name</a></li>
+        }
+      </ul>
+      <form action='/tamas/pass' method='post'>
+        <button class="btn btn-info" type="submit">Pass Time</button>
+      </form>
+        <a href="/tamas/new">Add a new Tama Toy</a>
     </div>
   </body>
 </html>

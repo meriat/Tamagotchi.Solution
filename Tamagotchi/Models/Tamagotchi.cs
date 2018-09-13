@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Tamagotchis.Models
@@ -8,15 +9,18 @@ namespace Tamagotchis.Models
     public int food {get; set;}
     public int attention {get; set;}
     public int rest {get; set;}
+
+    private static int _passDecrease = 0;
+
     public int id {get;}
     private static List<Tamagotchi> _instances = new List<Tamagotchi> {};
 
     public Tamagotchi(string newName)
     {
       name = newName;
-      food = 100;
-      attention = 100;
-      rest = 100;
+      food = 100 + _passDecrease;
+      attention = 100 + _passDecrease;
+      rest = 100 + _passDecrease;
       _instances.Add(this);
       id = _instances.Count;
     }
@@ -44,11 +48,12 @@ namespace Tamagotchis.Models
     {
       this.rest += 10;
     }
-    public static void PassTime()
+    public static void PassTime(Tamagotchi newTamagotchi)
     {
-      food -= 10;
-      attention -= 10;
-      rest -= 10;
+       newTamagotchi.food -= 5;
+       newTamagotchi.attention -= 5;
+       newTamagotchi.rest -= 5;
+      
     }
   }
 }

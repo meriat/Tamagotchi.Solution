@@ -53,21 +53,34 @@ namespace Tamagotchis.Controllers
     {
         Tamagotchi newTamagotchi = Tamagotchi.Find(id);
         newTamagotchi.Feed();
-        return View(newTamagotchi);
+        return View("Details",newTamagotchi);
     }
     [HttpPost("/tamas/play/{id}")]
     public ActionResult Play(int id)
     {
         Tamagotchi newTamagotchi = Tamagotchi.Find(id);
         newTamagotchi.Play();
-        return View(newTamagotchi);
+        return View("Details",newTamagotchi);
     }
     [HttpPost("/tamas/rest/{id}")]
     public ActionResult Rest(int id)
     {
         Tamagotchi newTamagotchi = Tamagotchi.Find(id);
         newTamagotchi.Sleep();
-        return View(newTamagotchi);
+        return View("Details",newTamagotchi);
+    }
+    [HttpPost("/tamas/pass")]
+     public ActionResult Pass()
+    {
+        List <Tamagotchi> allTamagotchis = Tamagotchi.GetAll();
+        foreach(Tamagotchi newTamagotchi in allTamagotchis)
+        {
+          newTamagotchi.food -= 5;
+          newTamagotchi.attention -= 5;
+          newTamagotchi.rest -= 5;
+        }
+        
+        return View("Index", allTamagotchis);
     }
   }
 }

@@ -1,0 +1,10 @@
+C:\Users\josem\Desktop\Epicodus\Tamagotchi.Solution\Tamagotchi\bin\Debug\netcoreapp1.1.4\Tamagotchi.deps.json
+C:\Users\josem\Desktop\Epicodus\Tamagotchi.Solution\Tamagotchi\bin\Debug\netcoreapp1.1.4\Tamagotchi.runtimeconfig.json
+C:\Users\josem\Desktop\Epicodus\Tamagotchi.Solution\Tamagotchi\bin\Debug\netcoreapp1.1.4\Tamagotchi.runtimeconfig.dev.json
+C:\Users\josem\Desktop\Epicodus\Tamagotchi.Solution\Tamagotchi\bin\Debug\netcoreapp1.1.4\Tamagotchi.dll
+C:\Users\josem\Desktop\Epicodus\Tamagotchi.Solution\Tamagotchi\bin\Debug\netcoreapp1.1.4\Tamagotchi.pdb
+C:\Users\josem\Desktop\Epicodus\Tamagotchi.Solution\Tamagotchi\obj\Debug\netcoreapp1.1.4\Tamagotchi.csprojResolveAssemblyReference.cache
+C:\Users\josem\Desktop\Epicodus\Tamagotchi.Solution\Tamagotchi\obj\Debug\netcoreapp1.1.4\Tamagotchi.csproj.CoreCompileInputs.cache
+C:\Users\josem\Desktop\Epicodus\Tamagotchi.Solution\Tamagotchi\obj\Debug\netcoreapp1.1.4\Tamagotchi.AssemblyInfo.cs
+C:\Users\josem\Desktop\Epicodus\Tamagotchi.Solution\Tamagotchi\obj\Debug\netcoreapp1.1.4\Tamagotchi.dll
+C:\Users\josem\Desktop\Epicodus\Tamagotchi.Solution\Tamagotchi\obj\Debug\netcoreapp1.1.4\Tamagotchi.pdb
